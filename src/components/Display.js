@@ -1,4 +1,4 @@
-import { checkPropTypes } from 'prop-types';
+import { PropTypes } from 'prop-types';
 import React from 'react';
 
 const Display = ({ value }) => (
@@ -10,7 +10,7 @@ Display.defaultProps = {
 };
 
 Display.propTypes = {
-  value: checkPropTypes.string,
+  value: PropTypes.string,
 };
 
 export default Display;
