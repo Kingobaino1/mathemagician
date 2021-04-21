@@ -8,13 +8,13 @@ const ButtonPanel = () => (
         <Button className="" name="AC" />
         <Button className="" name="+/-" />
         <Button className="" name="%" />
-        <Button className="" name="/" />
+        <Button className="" name="÷" />
       </div>
       <div className="w-50 mx-auto">
         <Button className="" name="7" />
         <Button className="" name="8" />
         <Button className="" name="9" />
-        <Button className="" name="*" />
+        <Button className="" name="x" />
       </div>
       <div className="w-50 mx-auto">
         <Button className="" name="4" />
