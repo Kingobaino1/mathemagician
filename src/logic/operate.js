@@ -19,7 +19,11 @@ const operates = (numberOne, numberTwo, operation) => {
       break;
 
     case '÷':
-      result = firstInput.div(secondInput);
+      if (numberTwo !== 0) {
+        result = firstInput.div(secondInput);
+      } else {
+        result = 'Maths Error';
+      }
       break;
 
     case '%':

@@ -26,12 +26,6 @@ const calculate = (calcData, btnName) => {
       }
       break;
 
-    case '%':
-      if (total) {
-        next = (total * 0.01).toString;
-      }
-      break;
-
     case '=':
       if (total && next && operate) {
         total = operates(total, next, operate);
@@ -42,8 +36,10 @@ const calculate = (calcData, btnName) => {
 
     case '.':
       if (total) {
-        if (total.includes('.')) {
-          total = '0.';
+        if (!total.includes('.')) {
+          total = total.concat('.');
+        } else {
+          return total;
         }
       }
       break;
