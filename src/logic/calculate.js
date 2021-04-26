@@ -7,12 +7,12 @@ const calculate = (calcData, btnName) => {
     operate,
   } = calcData;
 
-  const operators = ['+', '-', 'x', '÷'];
-  const numbers = ['0', '1', '3', '4', '5', '6', '7', '8', '9'];
+  const operators = ['+', '-', 'x', '÷', '%'];
+  const numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 
   switch (btnName) {
     case 'AC':
-      total = null;
+      total = '0';
       next = null;
       operate = null;
       break;
@@ -24,6 +24,7 @@ const calculate = (calcData, btnName) => {
       if (next) {
         next *= -1;
       }
+      operate = null;
       break;
 
     case '=':
@@ -56,7 +57,13 @@ const calculate = (calcData, btnName) => {
     } else {
       return btnName;
     }
-  } else if (operators.includes(btnName)) {
+  } else if (operators.includes(btnName) && btnName !== '%') {
+    next = total;
+    total = '0';
+    operate = btnName;
+  } else {
+    next = total;
+    total = next;
     operate = btnName;
   }
 

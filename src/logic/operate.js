@@ -1,43 +1,43 @@
 import Big from 'big.js';
 
 const operates = (numberOne, numberTwo, operation) => {
-  const firstInput = Big(+numberOne);
-  const secondInput = Big(+numberTwo);
+  const firstInput = Big(numberOne);
+  const secondInput = Big(numberTwo);
   let result;
 
   switch (operation) {
     case '+':
-      result = firstInput.plus(secondInput);
+      result = +firstInput.plus(+secondInput);
       break;
 
     case '-':
-      result = firstInput.minus(secondInput);
+      result = +secondInput.minus(+firstInput);
       break;
 
     case 'x':
-      result = firstInput.times(secondInput);
+      result = +firstInput.times(+secondInput);
       break;
 
     case '÷':
-      if (numberTwo !== 0) {
-        result = firstInput.div(secondInput);
+      if (numberOne !== 0) {
+        result = +secondInput.div(+firstInput);
       } else {
         result = 'Maths Error';
       }
       break;
 
     case '%':
-      result = secondInput.times(0.01);
+      result = +secondInput.div(100);
       break;
 
     case 'AC':
-      result = '';
+      result = '0';
       break;
 
     default:
       break;
   }
-  return result.toString;
+  return (result.toString());
 };
 
 export default operates;
