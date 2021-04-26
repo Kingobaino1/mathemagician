@@ -9,17 +9,15 @@ class App extends Component {
     this.state = {
       total: '0',
       // eslint-disable-next-line react/no-unused-state
-      next: null,
+      next: '0',
       // eslint-disable-next-line react/no-unused-state
-      operate: null,
+      operate: '=',
     };
     this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick = (btnName) => {
-    console.log(btnName);
     this.setState((state) => calculate(state, btnName));
-    // return this.setState((state) => { console.log(calculate(state, btnName)); });
   };
 
   render() {

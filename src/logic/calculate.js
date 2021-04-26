@@ -32,6 +32,8 @@ const calculate = (calcData, btnName) => {
         total = operates(total, next, operate);
         next = null;
         operate = null;
+      } else {
+        total = '0';
       }
       break;
 
