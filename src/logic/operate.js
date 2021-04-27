@@ -37,6 +37,10 @@ const operates = (numberOne, numberTwo, operation) => {
     default:
       break;
   }
+
+  if (result === undefined) {
+    result = '0';
+  }
   return (result.toString());
 };
 

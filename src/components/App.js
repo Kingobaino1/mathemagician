@@ -9,9 +9,9 @@ class App extends Component {
     this.state = {
       total: '0',
       // eslint-disable-next-line react/no-unused-state
-      next: '0',
+      next: '',
       // eslint-disable-next-line react/no-unused-state
-      operate: '=',
+      operate: '',
     };
     this.handleClick = this.handleClick.bind(this);
   }

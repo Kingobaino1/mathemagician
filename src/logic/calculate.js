@@ -40,7 +40,7 @@ const calculate = (calcData, btnName) => {
     case '.':
       if (total) {
         if (!total.includes('.')) {
-          total = total.concat('.');
+          total = (total.concat('.'));
         } else {
           return total;
         }

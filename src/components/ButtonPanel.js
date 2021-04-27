@@ -4,8 +4,8 @@ import Button from './Button';
 
 const ButtonPanel = ({ handleClick }) => (
   <>
-    <div className="w-25 mx-auto buttonPanel">
-      <div className="row mx-auto w-100 mt-2">
+    <div className="buttonPanel">
+      <div className="row mt-2 btnPanel">
         <div className="col-12">
           <Button color="button" clickHandler={handleClick} name="AC" />
           <Button color="button" clickHandler={handleClick} name="+/-" />
