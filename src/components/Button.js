@@ -26,7 +26,7 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-  color: 'button btn-primary',
+  color: 'button',
   big: false,
 };
 
