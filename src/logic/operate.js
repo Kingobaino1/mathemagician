@@ -19,10 +19,10 @@ const operates = (numberOne, numberTwo, operation) => {
       break;
 
     case '÷':
-      if (numberOne !== 0) {
-        result = +secondInput.div(+firstInput);
-      } else {
+      if (!+firstInput) {
         result = 'Maths Error';
+      } else {
+        result = +secondInput.div(+firstInput);
       }
       break;
 
@@ -38,8 +38,8 @@ const operates = (numberOne, numberTwo, operation) => {
       break;
   }
 
-  if (result === undefined) {
-    result = '0';
+  if (!result) {
+    result = secondInput;
   }
   return (result.toString());
 };

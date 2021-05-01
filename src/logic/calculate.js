@@ -35,6 +35,7 @@ const calculate = (calcData, btnName) => {
       } else {
         total = '0';
       }
+
       break;
 
     case '.':
@@ -42,7 +43,7 @@ const calculate = (calcData, btnName) => {
         if (!total.includes('.')) {
           total = (total.concat('.'));
         } else {
-          return total;
+          total = '.';
         }
       }
       break;
@@ -57,13 +58,13 @@ const calculate = (calcData, btnName) => {
     } else if (next) {
       next = next.concat(btnName);
     } else {
-      return btnName;
+      total = btnName;
     }
   } else if (operators.includes(btnName) && btnName !== '%') {
     next = total;
     total = '0';
     operate = btnName;
-  } else {
+  } else if (operators.includes(btnName) && btnName === '%') {
     next = total;
     total = next;
     operate = btnName;
