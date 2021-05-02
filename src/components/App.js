@@ -20,6 +20,13 @@ class App extends Component {
     this.setState((state) => calculate(state, btnName));
   };
 
+  // displayNum = (num) => {
+  //   if ((num.length === 1 && num === '0')) {
+  //     return num;
+  //   }
+  //   return num.slice(0, num.length);
+  // }
+
   render() {
     const { total } = this.state;
     return (
