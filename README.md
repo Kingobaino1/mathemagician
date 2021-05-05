@@ -2,13 +2,14 @@
 
 > This is an app that house a simple calculator. Built with React, Javascript and CSS
 
-![screenshot]()
+![screenshot](./src/Calcgif.gif)
 
 ## Built With
 
 - Javascript
 - React
 - CSS
+- Bootstrap
 
 ## Live Demo
 

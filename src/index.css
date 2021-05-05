@@ -33,6 +33,14 @@
   background-color: white;
 }
 
+.bg-image {
+  background-image: url('./pi.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+
 @media only screen and (min-width: 320px) {
   .buttonPanel {
     width: 100%;
@@ -42,6 +50,10 @@
   .btnPanel {
     width: 100%;
     margin: 0 auto;
+  }
+
+  .bg-image {
+    background-position: center center;
   }
 }
 
@@ -63,6 +75,11 @@
   }
 
   .display {
+    margin: 0 auto;
+  }
+
+  .wide {
+    width: 50%;
     margin: 0 auto;
   }
 }
