@@ -1,0 +1,85 @@
+.buttonPanel {
+  background-color: whitesmoke;
+}
+
+.display {
+  width: 20rem;
+  height: 4rem;
+  border-radius: 40px;
+  text-align: end;
+}
+
+.buttons {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 25px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px 10px;
+}
+
+.button {
+  background-color: orangered;
+}
+
+.button-eql {
+  width: 6.5rem;
+  height: 3.2rem;
+  margin: 10px 12px;
+  border-radius: 10px;
+}
+
+.number {
+  background-color: white;
+}
+
+.bg-image {
+  background-image: url('./pi.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+
+@media only screen and (min-width: 320px) {
+  .buttonPanel {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .btnPanel {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .bg-image {
+    background-position: center center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .buttonPanel {
+    width: 42%;
+    margin: 0 auto;
+  }
+
+  .display {
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .buttonPanel {
+    width: 25%;
+    margin: 0 auto;
+  }
+
+  .display {
+    margin: 0 auto;
+  }
+
+  .wide {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
