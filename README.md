@@ -64,8 +64,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - [Microverse](https://www.microverse.org/).
-- [Sound Cloud](https://soundcloud.com/).
-- [Code-Projects](https://code-projects.org/)
+- [Image by Gerd Altmann from Pixabay ](https://pixabay.com/illustrations/pi-board-blackboard-chalk-math-1453836/).
 
 ## 📝 License
 
