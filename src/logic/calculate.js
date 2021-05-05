@@ -42,8 +42,6 @@ const calculate = (calcData, btnName) => {
       if (total) {
         if (!total.includes('.')) {
           total = (total.concat('.'));
-        } else {
-          total = '.';
         }
       }
       break;
