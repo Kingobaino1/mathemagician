@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
 import calculate from '../logic/calculate';
+import Nav from './Nav';
 
 const App = () => {
   const [calData, setCalcData] = useState(
@@ -16,6 +17,7 @@ const App = () => {
   };
   return (
     <>
+      <Nav />
       <Display value={calData.total} />
       <ButtonPanel handleClick={handleClick} />
     </>
