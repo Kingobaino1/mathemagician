@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter, Switch } from 'react-router-dom';
 import './index.css';
-import Routes from './components/Routes';
+import Routes from './Routes';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Routes />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <Switch>
+      <Routes />
+    </Switch>
+  </BrowserRouter>,
 
   document.getElementById('root'),
 );
